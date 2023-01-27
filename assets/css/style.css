@@ -1,0 +1,448 @@
+/*======================================================
+Author Name: Somnath Sikder
+Template Name: Business Website
+Tags: Html, Css, Bootstrap, jQuery, Javascript
+========================================================*/
+
+/*======================================================
+Table Of Content:
+1. Global Css
+2. Typhography
+3. Common Style
+4. Header Section
+5. Banner Section
+6. About Us
+7. Our Services
+8. Testimonials 
+9. Counter Section
+10. Pricing Package
+11. Our Team
+12. Contact Us Form
+13. Map
+14. Footer
+========================================================*/
+
+/*================
+Global Css
+==================*/
+
+body{
+	padding: 0;
+	margin: 0;
+	color: #3a3a3a;
+}
+
+img{
+	max-width: 100%;
+	height: auto;
+}
+
+h1,h2,h3,h4,h5,h6{
+	padding: 0;
+	margin: 0;
+	color: #000;
+}
+
+p{
+	margin: 0;
+	padding: 0;
+	color: #3a3a3a;
+	font-size: 14px;
+}
+
+ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+/*================
+Typhography
+==================*/
+
+h1{
+	font-size: 50px;
+	line-height: 65px;
+}
+
+h2{
+	font-size: 40px; 
+	line-height: 50px;
+}
+
+h3{
+	font-size: 30px;
+	line-height: 40px;
+}
+
+h4{
+	font-size: 20px;
+	line-height: 30px;
+}
+
+h5{
+	font-size: 18px;
+	line-height: 28px;
+}
+
+h6{
+	font-size: 14px;
+	line-height: 24px;
+}
+
+/*================
+Common Style
+==================*/
+
+.section-padding{
+	padding: 70px 0;
+}
+
+.short-section-padding{
+	padding: 50px 0;
+}
+
+.section-bg{
+	background-color: #F7F7F7;
+}
+
+.section-title{
+	margin-bottom: 30px;
+}
+
+.section-title h2{
+	letter-spacing: 6px;
+}
+
+
+span{
+	color: #D42F2F;
+}
+
+
+/*=====================
+Header Section  
+=======================*/
+
+section.header-area {
+	background: #FBB829;
+	padding: 4px 0;
+	position: sticky;
+    z-index: 999;
+    top: 0;
+}
+
+.logo a{
+	text-decoration: none;
+}
+
+.logo h2{
+	font-size: 30px;
+}
+
+.menu-area {
+	text-align: right;
+}
+
+.menu-area ul li {
+	list-style: none;
+	display: inline-block;
+	margin-right: 20px;
+}
+
+.menu-area ul li a {
+	text-decoration: none;
+	color: #333333;
+	display: inline-block;
+	line-height: 50px;
+}
+
+
+
+
+/*=====================
+Banner Section  
+=======================*/
+
+.banner-area{
+	background-image: url(../images/banner.jpg);
+	background-repeat: no-repeat;
+	/*background-position: center;*/
+	background-size: cover;
+	height: 600px;
+	width: 100%;
+	position: relative;
+}
+
+
+section.banner-area::after {
+	position: absolute;
+	content: "";
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0,0,0,0.8);
+}
+
+
+.banner-inner-content {
+	text-align: center;
+	padding-top: 250px;
+	z-index: 9;
+	position: relative;
+}
+
+.banner-inner-content h2{
+	color: #fff;
+	font-size: 56px;
+	margin-bottom: 30px;
+}
+
+.banner-inner-content p{
+	color: #fff;
+	font-size: 18px;
+	margin-bottom: 40px;
+}
+
+.banner-inner-content a{
+	text-decoration: none;
+	color: #FBB829;
+	border: 1px solid #FBB829;
+	padding: 10px 20px;
+	transition: .5s;
+
+}
+
+.banner-inner-content a:hover {
+	color: #3a3a3a;
+	background: #FBB829;
+}
+
+
+/*=====================
+About Section 
+=======================*/
+
+.about-inner-left {
+	margin-right: 20px;
+}
+
+.about-inner-middle {
+	margin-left: 40px;
+}
+
+.about-inner-right {
+	margin-left: 20px;
+}
+
+
+.about-inner-middle ul li {
+	margin-bottom: 10px;
+}
+
+.about-inner-middle ul li i {
+	color: #FBB829;
+	margin-right: 10px;
+}
+
+.about-inner-left a {
+    text-decoration: none;
+    color: #FBB829;
+    border: 1px solid #FBB829;
+    padding: 10px 20px;
+    transition: .5s;
+}
+
+.about-inner-left a:hover {
+    color: #3a3a3a;
+    background: #FBB829;
+}
+
+
+/*=======================
+Service Section
+=========================*/
+
+.service-box {
+	text-align: center;
+	background: #fff;
+	padding: 50px;
+	border: 1px dashed #eaeaea;
+	box-shadow: 0px 0px 10px 4px #eaeaea;
+}
+
+.service-box h3 {
+	margin-bottom: 20px;
+}
+
+.service-box i {
+	color: #FBB829;
+	font-size: 30px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+
+/*=======================
+Testimonial Section
+=========================*/
+
+/*.testimonial-image img 
+{border-radius: 50%;
+	padding: 0px 100px;
+}
+
+.testimonial-image {
+	border-right: 1px solid #eaeaea;
+	float: left;
+}
+
+.testimonial-text ul li {
+	display: inline-block;
+	margin-right: 5px;
+}
+
+.testimonial-text ul li i {
+	color: #FBB829;
+	font-size: 20px;
+}
+
+.testimonial-rating p {
+	display: inline-block;
+	float: left;
+	margin-right: 20px;
+	font-weight: 400;
+}
+
+.testimonial-rating {
+	margin-top: 10px;
+}
+
+.testimonial-text {
+	margin-left: 36%;
+}
+
+.testimonial-text p {
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+
+.testimonial-rating p {
+	font-weight: 600;
+}
+
+*/
+/*=======================
+Counter Section
+=========================*/
+
+.counter-area{
+	background-image: url("../images/satisfied-wrapper-bg.png");
+	background-repeat: repeat;
+	width: 100%;
+	height: 300px;
+}
+
+.counter-inner {
+    border: 1px dashed #999999;
+    padding: 30px;
+}
+
+.counter-inner i {
+    font-size: 40px;
+    color: #FBB829;
+    margin-bottom: 10px;
+}
+
+
+/*=======================
+Pricing Section
+=========================*/
+
+
+
+
+/*=======================
+Our Team Section
+=========================*/
+
+.team-inner-content {
+    background: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.team-image img {
+    width: 100%;
+}
+
+
+.team-single {
+    box-shadow: 0px 0px 10px 4px #eaeaea;
+}
+
+
+
+/*=======================
+Form Section
+=========================*/
+
+.single-field input{
+	width: 100%;
+	border-radius: 4px;
+	border: 1px solid #FBB829;
+	height: 40px;
+	padding: 0 10px;
+}
+
+.single-field textarea {
+    width: 100%;
+    color: #FBB829;
+    border: 1px solid #FBB829;
+}
+
+
+.single-field{
+	margin-bottom: 20px;
+}
+
+.single-field .message {
+	background: #FBB829;
+}
+
+
+/*=======================
+Google Map Section
+=========================*/
+
+section.map-area p {
+    margin-bottom: -5px;
+}
+
+/*=======================
+Footer Section
+=========================*/
+
+.footer-area{
+	background: #212124;
+}
+
+section.footer-area p {
+    padding: 10px 0;
+    color: #98A4A6;
+    text-align: center;
+}
+
+
+
+
+
+/*=================================
+Carousel Slider Section
+===================================*/
+
+.slide-image{
+	height: 500px;
+	width: 100%;
+}
